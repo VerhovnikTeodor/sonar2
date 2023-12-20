@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;700&display=swap');
+
+.jeziki-container {
+    padding: 0;
+    margin: 5% 15%;
+    font-family: 'Outfit', sans-serif;
+    animation: slideIn 1.0s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Add this line to hide the overflow when scaling */
+}
+
+.kartica:hover,
+.dodaj-jezik:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add box-shadow effect */
+}
+
+
+.jeziki-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dodaj-jezik {
+    border-radius: 20px;
+    width: 115px !important;
+    background: #6389fa !important;
+    border: none;
+    margin-bottom: 10px;
+
+}
+
+.dodaj-jezik:hover,
+.gumbi button:hover {
+    background: rgba(47, 90, 237, 0.8) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+
+}
+
+
+.gumbi button {
+    border-radius: 20px;
+    width: 90px;
+    background: #2F5AED;
+    border: none;
+    margin: 5px;
+}
+
+.kartica {
+    background-color: #86A4FD;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    height: 160px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+}
+
+.kartica img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.zastava {
+    display: flex;
+    justify-content: center;
+}
+
+.podrobnosti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.podrobnosti div {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.jeziki-container a {
+    text-decoration: none;
+}
+
+.kartice-jezikov {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.kartice-jezikov .col  {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 300px) {
+
+    .podrobnosti {
+        display: none;
+    }
+
+    .kartica {
+        padding: 10px;
+    }
+
+}
+
+.kartica .dodaj {
+    /* Copy the styles from .kartica class */
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartica.dodaj:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+

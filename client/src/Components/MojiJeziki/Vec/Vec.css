@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;700&display=swap');
+
+.podatki-container {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 5% 15%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+    animation: slideIn 1.0s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.napredek-container {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 5% 15%;
+}
+
+.podatki-container img {
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.podatki-jezik {
+    text-align: center;
+}
+
+.gumb-naloge,
+.gumb-besede {
+    width: 100px !important;
+    border-radius: 30px;
+    background: #2F5AED;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gumb-naloge:hover,
+.gumb-besede:hover {
+    background: rgba(47, 90, 237, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+}
+
+.gumbi-col-naloge,
+.gumbi-col-besede {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.odstrani-ikona {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.ikona-odstrani:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.odstrani-jezik {
+    font-family: 'Outfit', sans-serif;
+}
+
+.modal-zapri {
+    width: 100px;
+    border-radius: 20px;
+    background-color: #86A4FD;
+    border: none;
+}
+
+
+.modal-odstrani {
+    width: 100px;
+    border-radius: 20px;
+    background: #fa9746d2;
+    border: none;
+}
+
+.modal-odstrani:hover {
+    background-color: #fa9746;
+}
+
+.progress-container2 {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 320px) {
+    .gumbi-col-naloge,
+    .gumbi-col-besede {
+        justify-content: center;
+    }
+}

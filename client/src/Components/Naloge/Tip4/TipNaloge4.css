@@ -1,0 +1,112 @@
+
+  .mask {
+    position: absolute;
+    width: 2px;
+    height: 16px; 
+    background-color: #ffffff;
+    left: -2px;
+    top: calc(50% - 8px);
+    z-index: 2;
+  }
+  
+  .buttonZvok {
+    background-color: white !important;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+  .buttonZvok:hover {
+    background-color: white !important;
+  }
+  
+  
+  button.btn.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out !important;
+    border: 2px solid #6389fa !important;
+    padding: 0.5em 4em !important; 
+    border-radius: 2em !important; 
+    background-color: white;
+    color:#6389fa
+  }
+  
+  button.btn.first:hover {
+    box-shadow: 0 0 40px 40px #6389fa inset !important;
+    color:white
+  }
+  @media (max-width: 768px) {
+    .my-badge-tip-naloge1_1 {
+      font-size: 15px !important;
+    }
+  }
+
+
+  
+  .my-badge-tip-naloge1_1 {
+    cursor: pointer;
+    margin: 3px;
+    font-size: 1.3em;  
+    transition: transform 0.2s;
+    border: 3px solid #d6d1d1;
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+    border-radius: 15px; 
+    font-weight: normal !important;
+  }
+  
+  
+  .fixed-bottom-container {
+    position: relative;
+  }
+  
+  .upper-line {
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .fixed-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }.custom-button1 {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  
+  
+
+  .bottom-modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  .custom-modal-dialog {
+    width: 100%;
+    max-width: none !important;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  
+  .custom-modal-content-correct {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 255, 34);
+  }
+  
+  .custom-modal-content-wrong {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 3, 3);
+  
+  }
+  .icon-large {
+    font-size: 66px;
+  }
+  
+  .icon-medium {
+    font-size: 50px;
+  }
+  
+  .icon-small {
+    font-size: 40px;
+  }

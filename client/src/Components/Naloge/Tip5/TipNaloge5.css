@@ -1,0 +1,72 @@
+.blue {
+    color: blue;
+  }
+
+
+ .mic-button {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 50px!important;
+  background-color: #6389fa !important;
+  color: white !important;
+  cursor: pointer !important;
+  transition: background-color 0.5s ease !important;
+}
+
+@media (max-width: 600px) {
+  .mic-button {
+    width: 100px!important;
+    height: 100px!important;
+    margin-top: -30px!important;  
+  }
+}
+
+
+@media (max-width: 400px) {
+  .mic-button {
+    width: 80px!important;
+    height: 80px!important;
+    margin-top: -50px!important; 
+  }
+}
+
+.mic-button.active {
+  background-color: #6389fa !important;
+  animation: pulse-effect 1s infinite !important;
+}
+
+
+
+
+  
+  @keyframes pulse-effect {
+    0% {
+      box-shadow: 0 0 0 10px rgb(0, 238, 255);
+    }
+    70% {
+      box-shadow: 0 0 0 5px rgba(0, 238, 255, 0.397);
+    }
+    100% {
+      box-shadow: 0 0 0 2px rgba(0, 238, 255, 0.842);
+    }
+  }
+
+
+  
+
+
+  
+  #delayed {
+    animation-delay: 1.5s;
+  }
+  
+
+  
+  .mic-icon {
+    height: 60px;
+    position: absolute;
+    margin: 21px;
+  }

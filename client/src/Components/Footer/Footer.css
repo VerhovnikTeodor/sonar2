@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;700&display=swap');
+
+
+.footer {
+    background-color: #6389FA;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 1.0s ease;
+    padding: 30px;
+    justify-content: center;
+
+}
+
+.noga {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
